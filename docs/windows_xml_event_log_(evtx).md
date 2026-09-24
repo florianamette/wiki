@@ -4,7 +4,7 @@ tags:
   - Windows
   - XML
 ---
-The Windows XML Event Log (EVTX) format was introduces in [Windows
+The Windows XML Event Log (EVTX) format was introduced in [Windows
 Vista](windows.md) as a replacement for the [Windows Event Log
 (evt)](windows_event_log_(evt).md) format.
 
@@ -64,6 +64,11 @@ Where LCID is the "locale identifier"
 ## Tools
 
 * [libevtx](libevtx.md)
+* [evtx](https://github.com/omerbenamram/evtx), Rust parser and `evtx_dump` CLI (XML, JSON, JSONL output)
+* [EvtxECmd](https://github.com/EricZimmerman/evtx), by Eric Zimmerman, normalizes events to CSV/JSON using per-event maps
+* [Chainsaw](https://github.com/WithSecureOpenSource/chainsaw), hunts EVTX files with Sigma rules
+* [Hayabusa](https://github.com/Yamato-Security/hayabusa), Sigma-based EVTX timeline and threat-hunting tool
+* [EVTX parser](https://www.evtxparser.com/), browser-based EVTX viewer (the Rust evtx crate compiled to WebAssembly; files are parsed locally and not uploaded)
 * [log2timeline](log2timeline.md)
 * [wevtutil](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749339(v=ws.11))
 * [LogParser](https://www.microsoft.com/en-us/download/details.aspx?id=24659)
